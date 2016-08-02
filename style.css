@@ -1,0 +1,90 @@
+/*
+Theme Name: Syren
+Theme URI: 
+Author: Arthur Attwell
+Author URI: http://arthurattwell.com
+Description: A fast, lightweight (news) clipper
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: syren
+Tags:
+*/
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i";
+body {
+  font-family: "Source Sans Pro";
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: #3ba933; }
+
+blockquote {
+  padding: 0 1em;
+  margin: 0;
+  background: white;
+  border: 1px solid #dedede; }
+  blockquote p:first-child:before {
+    content: "\201C";
+    font-size: 2em;
+    line-height: 100%;
+    color: #3ba933;
+    float: left;
+    margin-left: -0.4em; }
+
+#header {
+  text-align: center; }
+  #header h1 {
+    font-weight: 600; }
+  #header .tagline {
+    max-width: 30em;
+    margin: 0 auto 1em auto;
+    font-size: 1.3em;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding: 0.5em 0;
+    font-style: italic; }
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start; }
+  .posts .post {
+    flex-basis: 20em;
+    flex-grow: 1;
+    float: left;
+    margin: 0 1em 1em 0;
+    padding: 0.25em;
+    overflow-x: hidden; }
+
+.post-edit-link {
+  display: none; }
+
+.post-tags a {
+  color: grey;
+  display: inline-block;
+  border: 1px solid #3ba933;
+  padding: 0.2em 0.3em;
+  border-radius: 0.15em;
+  margin: 0 0.2em 0.2em 0; }
+.post-tags a:hover {
+  color: white;
+  background: #3ba933; }
+
+.tag-archive-tags {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  background: #3ba933;
+  display: inline-block;
+  border: 1px solid #3ba933;
+  padding: 0.2em 0.3em;
+  border-radius: 0.15em;
+  margin: 0 0.2em 0.2em 0; }
+
+/*# sourceMappingURL=style.css.map */

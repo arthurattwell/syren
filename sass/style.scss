@@ -1,0 +1,131 @@
+// Sass styles for Syren theme
+
+// To update styles.css, run from this folder:
+// sass --watch style.scss:../style.css
+
+/*
+Theme Name: Syren
+Theme URI: 
+Author: Arthur Attwell
+Author URI: http://arthurattwell.com
+Description: A fast, lightweight (news) clipper
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: syren
+Tags:
+*/
+
+// Variables
+
+$color-text-main: black;
+$color-text-light: grey;
+$color-accent: #3ba933; // Shuttleworth green
+$border-light: rgb(222, 222, 222);
+
+// Base typography
+
+// Font imports
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i';
+
+body {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+}
+
+@mixin headings() {
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include headings();
+}
+
+a {
+    text-decoration: none;
+    color: $color-accent;
+}
+
+blockquote {
+    padding: 0 1em;
+    margin: 0;
+    background: white;
+    border: 1px solid $border-light;
+    p:first-child:before {
+        content: "\201C";
+        font-size: 2em;
+        line-height: 100%;
+        color: $color-accent;
+        float: left;
+        margin-left: -0.4em;
+    }
+}
+
+// Wordpress elements
+
+#header {
+    text-align: center;
+    h1 {
+        font-weight: 600;
+    }
+    .sitename {}
+    .tagline {
+        max-width: 30em;
+        margin: 0 auto 1em auto;
+        font-size: 1.3em;
+        border-top: 1px solid $border-light;
+        border-bottom: 1px solid $border-light;
+        padding: 0.5em 0;
+        font-style: italic;
+    }
+}
+
+#sidebar {
+
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    .post {
+        flex-basis: 20em;
+        flex-grow: 1;
+        float: left;
+        margin: 0 1em 1em 0;
+        padding: 0.25em;
+        overflow-x: hidden;
+    }
+}
+
+.post-edit-link {
+    display: none;
+}
+
+.post-tags {
+    a {
+        color: $color-text-light;
+        display: inline-block;
+        border: 1px solid $color-accent;
+        padding: 0.2em 0.3em;
+        border-radius: 0.15em;
+        margin: 0 0.2em 0.2em 0;
+    }
+    a:hover {
+        color: white;
+        background: $color-accent;
+    }
+}
+.tag-archive-tags {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    background: $color-accent;
+    display: inline-block;
+    border: 1px solid $color-accent;
+    padding: 0.2em 0.3em;
+    border-radius: 0.15em;
+    margin: 0 0.2em 0.2em 0;
+}
