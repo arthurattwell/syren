@@ -101,10 +101,13 @@ blockquote {
 }
 
 .post-edit-link {
-    display: none;
+    display: inline-block;
+    float: right;
 }
 
 .post-tags {
+    display: inline-block;
+    margin: 0 0 1em 0;
     a {
         color: $color-text-light;
         display: inline-block;

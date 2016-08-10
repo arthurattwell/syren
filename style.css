@@ -63,18 +63,22 @@ blockquote {
     overflow-x: hidden; }
 
 .post-edit-link {
-  display: none; }
-
-.post-tags a {
-  color: grey;
   display: inline-block;
-  border: 1px solid #3ba933;
-  padding: 0.2em 0.3em;
-  border-radius: 0.15em;
-  margin: 0 0.2em 0.2em 0; }
-.post-tags a:hover {
-  color: white;
-  background: #3ba933; }
+  float: right; }
+
+.post-tags {
+  display: inline-block;
+  margin: 0 0 1em 0; }
+  .post-tags a {
+    color: grey;
+    display: inline-block;
+    border: 1px solid #3ba933;
+    padding: 0.2em 0.3em;
+    border-radius: 0.15em;
+    margin: 0 0.2em 0.2em 0; }
+  .post-tags a:hover {
+    color: white;
+    background: #3ba933; }
 
 .tag-archive-tags {
   text-align: center;
