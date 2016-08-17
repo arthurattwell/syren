@@ -33,6 +33,9 @@ xmlns:fb="http://ogp.me/ns/fb#"
             <p class="tagline">
                 <?php echo get_bloginfo( 'description' ); ?>
             </p>
+            
+            <?php get_search_form() ?>
+            
         </div><!--#header -->
 
         <div class="content">

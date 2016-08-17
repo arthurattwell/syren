@@ -17,6 +17,11 @@ get_sidebar();
 } else {}
 ?>
 
+<?php if ( is_search() ) {
+    ?><div class="search-query"><?php echo get_search_query(); ?></div><?php
+} else {}
+?>
+
 <div class="posts"><?php
 if (have_posts()) :
     while (have_posts()) :
@@ -30,4 +35,5 @@ if (have_posts()) :
     endwhile;
 endif;
 ?></div><!--.post-->
+
 <?php get_footer(); ?>
