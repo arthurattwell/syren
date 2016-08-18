@@ -157,21 +157,13 @@ blockquote {
         @include button-light-hover();
     }
 }
-.tag-archive-tags {
-    @include button();
-    @include button-dark();
-    font-size: 1.5em;
-}
-
-.search-query {
-    @include button();
-    @include button-dark();
-    font-size: 1.5em;
-}
 
 // Search
 
 #search-form {
+    width: 12em;
+    max-width: 100%;
+    margin: auto;
     #search-input {
         font-family: $font-default;
         width: 100%;
@@ -182,6 +174,24 @@ blockquote {
         float: left;
         margin: 0 0.5em 0.5em 0;
         height: 1.8em;
+    }
+}
+
+// Page archive pages
+
+.page-archive-name {
+    clear: both;
+    padding-top: 1em;
+    .tag-archive-tags {
+        @include button();
+        @include button-dark();
+        font-size: 1.5em;
+    }
+
+    .search-query {
+        @include button();
+        @include button-dark();
+        font-size: 1.5em;
     }
 }
 

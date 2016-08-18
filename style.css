@@ -94,36 +94,42 @@ blockquote {
     color: white;
     background: #3ba933; }
 
-.tag-archive-tags {
-  display: inline-block;
-  border: 1px solid #3ba933;
-  padding: 0.2em 0.3em;
-  border-radius: 0.15em;
-  margin: 0 0.2em 0.2em 0;
-  background: #3ba933;
-  color: white;
-  font-size: 1.5em; }
+#search-form {
+  width: 12em;
+  max-width: 100%;
+  margin: auto; }
+  #search-form #search-input {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    width: 100%;
+    font-size: 1.5em;
+    border-radius: 0.2em;
+    border: 1px solid green;
+    padding: 0.3em;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+    height: 1.8em; }
 
-.search-query {
-  display: inline-block;
-  border: 1px solid #3ba933;
-  padding: 0.2em 0.3em;
-  border-radius: 0.15em;
-  margin: 0 0.2em 0.2em 0;
-  background: #3ba933;
-  color: white;
-  font-size: 1.5em; }
-
-#search-form #search-input {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  width: 100%;
-  font-size: 1.5em;
-  border-radius: 0.2em;
-  border: 1px solid green;
-  padding: 0.3em;
-  float: left;
-  margin: 0 0.5em 0.5em 0;
-  height: 1.8em; }
+.page-archive-name {
+  clear: both;
+  padding-top: 1em; }
+  .page-archive-name .tag-archive-tags {
+    display: inline-block;
+    border: 1px solid #3ba933;
+    padding: 0.2em 0.3em;
+    border-radius: 0.15em;
+    margin: 0 0.2em 0.2em 0;
+    background: #3ba933;
+    color: white;
+    font-size: 1.5em; }
+  .page-archive-name .search-query {
+    display: inline-block;
+    border: 1px solid #3ba933;
+    padding: 0.2em 0.3em;
+    border-radius: 0.15em;
+    margin: 0 0.2em 0.2em 0;
+    background: #3ba933;
+    color: white;
+    font-size: 1.5em; }
 
 .pagination {
   font-size: 1.5em;

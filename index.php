@@ -12,6 +12,7 @@ get_header();
 get_sidebar();
 ?>
 
+<div class="page-archive-name">
 <?php if ( is_tag() ) {
     ?><div class="tag-archive-tags"><?php single_tag_title(''); ?></div><?php
 } else {}
@@ -21,6 +22,7 @@ get_sidebar();
     ?><div class="search-query"><?php echo get_search_query(); ?></div><?php
 } else {}
 ?>
+</div><!--.page-archive-name-->
 
 <div class="posts"><?php
 if (have_posts()) :
