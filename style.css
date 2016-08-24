@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: syren
 Tags:
 */
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,700";
 body {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-weight: 300; }
@@ -38,13 +38,18 @@ blockquote {
 #header {
   text-align: center; }
   #header h1 {
-    font-weight: 600; }
+    font-weight: 600;
+    float: left;
+    margin: 0.25em 0; }
   #header .tagline {
+    float: right;
     max-width: 30em;
-    margin: 0 auto 1em auto;
-    font-size: 1.3em;
-    padding: 0.5em 0;
-    font-style: italic; }
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: grey;
+    letter-spacing: 0.1em;
+    margin: 1em 0; }
 
 #footer {
   border-top: 2px solid #3ba933;
@@ -95,6 +100,8 @@ blockquote {
     background: #3ba933; }
 
 #search-form {
+  clear: both;
+  float: left;
   width: 12em;
   max-width: 100%;
   margin: auto; }
@@ -102,9 +109,9 @@ blockquote {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     width: 100%;
     font-size: 1.5em;
-    border-radius: 0.2em;
-    border: 1px solid green;
-    padding: 0.3em;
+    border: 0;
+    border-bottom: 1px solid green;
+    padding: 0.3em 0.3em 0.3em 0;
     float: left;
     margin: 0 0.5em 0.5em 0;
     height: 1.8em; }

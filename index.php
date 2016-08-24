@@ -36,6 +36,6 @@ if (have_posts()) :
         <?php
     endwhile;
 endif;
-?></div><!--.post-->
+?></div><!--.posts-->
 
 <?php get_footer(); ?>
