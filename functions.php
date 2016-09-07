@@ -62,3 +62,21 @@ function disable_emojicons_tinymce( $plugins ) {
  */
 
 add_theme_support( 'html5', array( 'search-form' ) );
+
+
+add_filter( 'wp_title', 'syren_title_for_home' );
+ 
+/**
+ * Customize the title for the home page, if one is not set.
+ * https://developer.wordpress.org/reference/functions/wp_title/
+ *
+ * @param string $title The original title.
+ * @return string The title to use.
+ */
+function syren_title_for_home( $title )
+{
+  if ( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    $title = get_bloginfo( 'title' );
+  }
+  return $title;
+}
